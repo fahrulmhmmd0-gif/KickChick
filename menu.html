@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu - KICK CHICK | Fried Chicken & More</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(255, 255, 255);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ====== VIDEO BACKGROUND ====== */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.9;
+    }
+
+    /* ====== OVERLAY ====== */
+    .overlay {
+      min-height: 100vh;
+      padding-top: 120px;
+      padding-bottom: 60px;
+    }
+
+    .navbar {
+      background-color: #00000000;
+    }
+
+    .nav-link {
+      color: #ffffff !important;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-right: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: #e31837;
+      border-radius: 5px;
+      color: #fff !important;
+    }
+
+    .menu-header {
+      text-align: center;
+      padding: 100px 0 40px;
+      color: #e31837;
+    }
+
+    .menu-header h1 {
+      font-weight: bold;
+      font-size: 56px;
+    }
+
+    .menu-header p {
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .menu-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .menu-card .card-body {
+      text-align: center;
+      background-color: #00000027;
+    }
+
+    .menu-card h5 {
+      font-weight: bold;
+      color: #e31837;
+    }
+
+    .menu-card p {
+      color: #444;
+    }
+
+    footer {
+      background-color: #00000049;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="vidio/pesona.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video tag.
+  </video>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow">
+    <div class="container">
+      <img src="GAMBAR/logo.png" class="img-fluid me-3" style="width: 120px; height: 90px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HEADER ====== -->
+  <section class="menu-header">
+    <div class="container">
+      <h1>Menu KICK CHICK</h1>
+      <p>Lezat, pedas, dan renyah — siap memanjakan lidah Anda!</p>
+    </div>
+  </section>
+
+  <!-- ====== MENU PANEL ====== -->
+  <div class="container pb-5">
+
+    <!-- SIGNATURE CHICKEN -->
+    <h2 class="text-center text-danger fw-bold mb-4">🍗 Signature Chicken</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card menu-card">
+          <img src="GAMBAR/ayam Pedas.png" class="card-img-top" alt="Spicy Chicken">
+          <div class="card-body">
+            <h5>Spicy Kick Chicken</h5>
+            <p>Ayam goreng pedas khas KICK CHICK</p>
+            <p><strong>Rp 22.000</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-card">
+          <img src="GAMBAR/ayam OG.png" class="card-img-top" alt="Original Chicken">
+          <div class="card-body">
+            <h5>Original Crispy</h5>
+            <p>Rasa gurih dan renyah sempurna</p>
+            <p><strong>Rp 20.000</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-card">
+          <img src="GAMBAR/ayam keju.png" class="card-img-top" alt="Cheese Chicken">
+          <div class="card-body">
+            <h5>Cheesy Melt</h5>
+            <p>Ayam crispy dengan saus keju leleh</p>
+            <p><strong>Rp 25.000</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-card">
+          <img src="GAMBAR/ayam bbq.png" class="card-img-top" alt="BBQ Chicken">
+          <div class="card-body">
+            <h5>BBQ Fire Chicken</h5>
+            <p>Ayam dengan saus BBQ manis pedas</p>
+            <p><strong>Rp 23.000</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAKET HEMAT -->
+    <h2 class="text-center text-danger fw-bold mt-5 mb-4">🍟 Paket Hemat</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="GAMBAR/paket 1.png" class="card-img-top" alt="Paket 1">
+          <div class="card-body">
+            <h5>Paket Super</h5>
+            <p>1 Ayam + Nasi + Teh Manis</p>
+            <p><strong>Rp 28.000</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="GAMBAR/paket 2.png" class="card-img-top" alt="Paket 2">
+          <div class="card-body">
+            <h5>Paket Kombo</h5>
+            <p>2 Ayam + Nasi + Kentang + Minum</p>
+            <p><strong>Rp 38.000</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="GAMBAR/paket 3.png" class="card-img-top" alt="Paket 3">
+          <div class="card-body">
+            <h5>Paket Rame</h5>
+            <p>4 Ayam + 1 Nasi + 2 Minuman</p>
+            <p><strong>Rp 75.000</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MINUMAN -->
+    <h2 class="text-center text-danger fw-bold mt-5 mb-4">🥤 Minuman</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card menu-card">
+          <img src="GAMBAR/teh manis.png" class="card-img-top" alt="Teh Manis">
+          <div class="card-body">
+            <h5>Teh Manis Dingin</h5>
+            <p><strong>Rp 7.000</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-card">
+          <img src="GAMBAR/lemon.png" class="card-img-top" alt="Lemon Tea">
+          <div class="card-body">
+            <h5>Lemon Tea</h5>
+            <p><strong>Rp 9.000</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-card">
+          <img src="GAMBAR/milo.png" class="card-img-top" alt="Milo">
+          <div class="card-body">
+            <h5>Milo Dingin</h5>
+            <p><strong>Rp 10.000</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-card">
+          <img src="GAMBAR/milkshake.png" class="card-img-top" alt="Kopi Susu">
+          <div class="card-body">
+            <h5>Milkshake Vanilla</h5>
+            <p><strong>Rp 12.000</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p class="mb-0">© 2025 KICK CHICK | “Rasa Pedas, Gurih, dan Nagih!”</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
